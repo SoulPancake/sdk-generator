@@ -527,7 +527,13 @@ describe("{{appTitleCaseName}} SDK", function () {
           fgaApi.check(baseConfig.storeId!, { tuple_key: tupleKey }, { retryParams: { maxRetry: 0 }})
         ).rejects.toThrow(FgaApiInternalError);
       });
-      it("should throw FgaApiInternalError for 500 error without Retry-After header", async () => {
+      it("should retry 500 error without Retry-After header using exponential backoff", async () => {
+        const updateBaseConfig = {
+          ...baseConfig,
+          retryParams: GetDefaultRetryParams(2, 10),
+        };
+        const fgaApiWithRetry = new {{appShortName}}Api({ ...updateBaseConfig });
+
         nock(basePath)
           .post(
             `/stores/${storeId}/check`,
@@ -541,9 +547,20 @@ describe("{{appTitleCaseName}} SDK", function () {
             message: "nock error",
           });
 
-        await expect(
-          fgaApi.check(baseConfig.storeId!, { tuple_key: tupleKey })
-        ).rejects.toThrow(FgaApiInternalError);
+        nock(basePath)
+          .post(
+            `/stores/${storeId}/check`,
+            {
+              tuple_key: tupleKey,
+            },
+            expect.objectContaining({ Authorization: "Bearer test-token" })
+          )
+          .reply(200, {
+            allowed: true,
+          });
+
+        const response = await fgaApiWithRetry.check(baseConfig.storeId!, { tuple_key: tupleKey });
+        expect(response.allowed).toBe(true);
       });
 
       it("should not throw FgaApiInternalError with default retries", async () => {

@@ -77,10 +77,10 @@ class RetryStrategyTest {
         Duration result = RetryStrategy.calculateRetryDelay(retryAfterDelay, retryCount, minimumRetryDelay);
 
         // Then
-        // Should use default 100ms base delay
-        // For retry count 1: 2^1 * 100ms = 200ms base
-        // With jitter: between 200ms and 400ms
-        assertThat(result.toMillis()).isBetween(200L, 400L);
+        // Should use default {{defaultMinWaitInMs}}ms base delay
+        // For retry count 1: 2^1 * {{defaultMinWaitInMs}}ms = {{defaultMinWaitInMs}}*2ms base
+        // With jitter: between {{defaultMinWaitInMs}}*2ms and {{defaultMinWaitInMs}}*4ms
+        assertThat(result.toMillis()).isBetween({{defaultMinWaitInMs}}L * 2, {{defaultMinWaitInMs}}L * 4);
     }
 
     @Test

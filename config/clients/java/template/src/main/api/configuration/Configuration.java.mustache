@@ -29,10 +29,10 @@ public class Configuration implements BaseConfiguration {
     private static final int MAX_ALLOWABLE_RETRIES = 15;
 
     /**
-     * Default minimum retry delay of 100ms.
+     * Default minimum retry delay of {{defaultMinWaitInMs}}ms.
      * This value is used as the default base delay for exponential backoff calculations.
      */
-    public static final Duration DEFAULT_MINIMUM_RETRY_DELAY = Duration.ofMillis(100);
+    public static final Duration DEFAULT_MINIMUM_RETRY_DELAY = Duration.ofMillis({{defaultMinWaitInMs}});
 
     private String apiUrl;
     private Credentials credentials;

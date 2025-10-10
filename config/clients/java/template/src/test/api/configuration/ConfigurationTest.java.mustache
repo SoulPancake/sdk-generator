@@ -331,6 +331,6 @@ class ConfigurationTest {
 
         // Then
         assertNotNull(defaultDelay, "minimumRetryDelay should have a default value");
-        assertEquals(Duration.ofMillis(100), defaultDelay, "Default minimumRetryDelay should be 100ms");
+        assertEquals(Duration.ofMillis({{defaultMinWaitInMs}}), defaultDelay, "Default minimumRetryDelay should be {{defaultMinWaitInMs}}ms");
     }
 }

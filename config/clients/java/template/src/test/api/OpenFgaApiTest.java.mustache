@@ -36,7 +36,7 @@ public class OpenFgaApiTest {
     private static final String DEFAULT_SCHEMA_VERSION = "1.1";
     private static final String EMPTY_RESPONSE_BODY = "{}";
     private static final int DEFAULT_MAX_RETRIES = 3;
-    private static final Duration DEFAULT_RETRY_DELAY = Duration.ofMillis(100);
+    private static final Duration DEFAULT_RETRY_DELAY = Duration.ofMillis({{defaultMinWaitInMs}});
     private static final TelemetryConfiguration DEFAULT_TELEMETRY_CONFIG = new TelemetryConfiguration();
 
     private final ObjectMapper mapper = new ObjectMapper();

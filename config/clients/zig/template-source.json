@@ -1,0 +1,8 @@
+{
+  "repo": "https://github.com/OpenAPITools/openapi-generator",
+  "branch": "master",
+  "commit": "latest",
+  "url": "https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator/src/main/resources/C-libcurl",
+  "docs": "https://github.com/OpenAPITools/openapi-generator/blob/master/docs/generators/c.md",
+  "note": "Using C-libcurl generator as base. Zig-specific wrapper implementation required."
+}

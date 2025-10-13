@@ -1,0 +1,23 @@
+### Installation
+
+> **Note**: This is an experimental Zig SDK for OpenFGA. Zig support in OpenAPI Generator is not yet available, so this SDK uses the C client generator as a base with Zig-specific adaptations.
+
+To use this SDK in your Zig project, you can reference it in your `build.zig.zon`:
+
+```zig
+.dependencies = .{
+    .openfga = .{
+        .url = "{{gitHost}}/{{gitUserId}}/{{gitRepoId}}/archive/refs/tags/v{{packageVersion}}.tar.gz",
+    },
+},
+```
+
+Then in your `build.zig`:
+
+```zig
+const openfga = b.dependency("openfga", .{
+    .target = target,
+    .optimize = optimize,
+});
+exe.root_module.addImport("openfga", openfga.module("openfga"));
+```

@@ -1,0 +1,24 @@
+.{
+    .name = "{{packageName}}",
+    .version = "{{packageVersion}}",
+    .minimum_zig_version = "0.11.0",
+    
+    .dependencies = .{
+        // Add any Zig dependencies here if needed
+        // For now, we only depend on system libcurl which is linked in build.zig
+    },
+    
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "include",
+        "model",
+        "api",
+        "external",
+        "unit-test",
+        "zig", // For Zig wrapper code when implemented
+        "LICENSE",
+        "README.md",
+    },
+}

@@ -1,8 +1,11 @@
 {{>partial_header}}
 {{#models}}{{#model}}from {{modelPackage}}.{{classFilename}} import {{classname}}{{/model}}
 {{/models}}
+from {{modelPackage}}.on_duplicate_writes import OnDuplicateWrites
+from {{modelPackage}}.on_missing_deletes import OnMissingDeletes
 
 __all__ = [
 {{#models}}{{#model}}"{{classname}}",
-{{/model}}{{/models}}
+{{/model}}{{/models}}"OnDuplicateWrites",
+"OnMissingDeletes",
 ]

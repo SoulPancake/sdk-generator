@@ -157,6 +157,14 @@
       "destinationFilename": "openfga_sdk/models/__init__.py",
       "templateType": "SupportingFiles"
     },
+    "src/models/on_duplicate_writes.py.mustache": {
+      "destinationFilename": "openfga_sdk/models/on_duplicate_writes.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/models/on_missing_deletes.py.mustache": {
+      "destinationFilename": "openfga_sdk/models/on_missing_deletes.py",
+      "templateType": "SupportingFiles"
+    },
     "/src/sync/client/__init__.py.mustache": {
       "destinationFilename": "openfga_sdk/sync/client/__init__.py",
       "templateType": "SupportingFiles"

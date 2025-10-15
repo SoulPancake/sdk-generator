@@ -1,0 +1,18 @@
+{
+  "sdkId": "zig",
+  "gitRepoId": "zig-sdk",
+  "packageName": "openfga",
+  "packageVersion": "0.0.1",
+  "packageDescription": "Zig SDK for OpenFGA",
+  "packageDetailedDescription": "This is an experimental Zig SDK for OpenFGA. It provides a wrapper around the [OpenFGA API definition](https://openfga.dev/api). Note: This SDK uses the C client generator as a base and requires Zig wrapper implementation.",
+  "files": {
+    "build.zig.mustache": {
+      "destinationFilename": "build.zig",
+      "templateType": "SupportingFiles"
+    },
+    "build.zig.zon.mustache": {
+      "destinationFilename": "build.zig.zon",
+      "templateType": "SupportingFiles"
+    }
+  }
+}

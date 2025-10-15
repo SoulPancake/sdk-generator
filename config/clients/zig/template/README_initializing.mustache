@@ -1,0 +1,41 @@
+### Initializing the SDK
+
+Initialize the OpenFGA client once and reuse it throughout your application to benefit from connection pooling and avoid unnecessary overhead.
+
+#### Basic Configuration
+
+```zig
+const std = @import("std");
+const openfga = @import("openfga");
+
+pub fn main() !void {
+    var gpa = std.heap.GeneralPurposeAllocator(.{}){};
+    defer _ = gpa.deinit();
+    const allocator = gpa.allocator();
+
+    const config = openfga.ClientConfiguration{
+        .api_url = "https://api.{{sampleApiDomain}}",
+        .store_id = "YOUR_STORE_ID",
+        .authorization_model_id = "YOUR_MODEL_ID", // Optional
+    };
+
+    var client = try openfga.Client.init(allocator, config);
+    defer client.deinit();
+    
+    // Use client for API calls
+}
+```
+
+#### With API Token Authentication
+
+```zig
+const config = openfga.ClientConfiguration{
+    .api_url = "https://api.{{sampleApiDomain}}",
+    .store_id = "YOUR_STORE_ID",
+    .authorization_model_id = "YOUR_MODEL_ID",
+    .api_token = "YOUR_API_TOKEN",
+};
+
+var client = try openfga.Client.init(allocator, config);
+defer client.deinit();
+```

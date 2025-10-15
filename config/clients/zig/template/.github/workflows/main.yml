@@ -1,0 +1,40 @@
+name: Zig CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        zig-version: ['0.11.0', '0.12.0', 'master']
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Zig
+      uses: goto-bus-stop/setup-zig@v2
+      with:
+        version: ${{ matrix.zig-version }}
+    
+    - name: Build
+      run: zig build
+    
+    - name: Run Tests
+      run: zig build test
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Zig
+      uses: goto-bus-stop/setup-zig@v2
+      with:
+        version: '0.12.0'
+    
+    - name: Format Check
+      run: zig fmt --check .

@@ -1,0 +1,93 @@
+### Calling the API
+
+#### Stores
+
+##### Create Store
+
+Create and initialize a store.
+
+[API Documentation]({{apiDocsUrl}}#/Stores/CreateStore)
+
+```zig
+const store_result = try client.createStore(.{
+    .name = "FGA Demo Store",
+});
+defer store_result.deinit();
+
+std.debug.print("Created store: {s}\n", .{store_result.id});
+```
+
+##### Get Store
+
+Get information about the current store.
+
+[API Documentation]({{apiDocsUrl}}#/Stores/GetStore)
+
+```zig
+const store = try client.getStore();
+defer store.deinit();
+
+std.debug.print("Store: {s}\n", .{store.name});
+```
+
+#### Relationship Tuples
+
+##### Write Relationship Tuples
+
+Create and/or delete relationship tuples to update the system state.
+
+[API Documentation]({{apiDocsUrl}}#/Relationship%20Tuples/Write)
+
+```zig
+const write_request = openfga.WriteRequest{
+    .writes = &[_]openfga.TupleKey{
+        .{
+            .user = "user:anne",
+            .relation = "viewer",
+            .object = "document:roadmap",
+        },
+    },
+};
+
+try client.write(write_request);
+```
+
+#### Relationship Queries
+
+##### Check
+
+Check if a user has a particular relation with an object.
+
+[API Documentation]({{apiDocsUrl}}#/Relationship%20Queries/Check)
+
+```zig
+const check_result = try client.check(.{
+    .user = "user:anne",
+    .relation = "viewer",
+    .object = "document:roadmap",
+});
+defer check_result.deinit();
+
+if (check_result.allowed) {
+    std.debug.print("User is allowed\n", .{});
+}
+```
+
+##### List Objects
+
+List the objects of a particular type a user has access to.
+
+[API Documentation]({{apiDocsUrl}}#/Relationship%20Queries/ListObjects)
+
+```zig
+const objects = try client.listObjects(.{
+    .user = "user:anne",
+    .relation = "can_read",
+    .type = "document",
+});
+defer objects.deinit();
+
+for (objects.items) |obj| {
+    std.debug.print("Object: {s}\n", .{obj});
+}
+```

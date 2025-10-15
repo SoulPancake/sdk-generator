@@ -1,0 +1,16 @@
+# Use this file to prevent files from being overwritten by the generator.
+# The patterns follow close to .gitignore or .dockerignore.
+
+# As an example, the C++ generator marks these as reserved words.
+# Override this file with custom configurations.
+
+# Ignore build artifacts
+zig-cache/
+zig-out/
+*.o
+*.a
+
+# Keep template files
+!.github/
+!README*.mustache
+!gitignore_custom.mustache

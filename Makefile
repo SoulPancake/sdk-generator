@@ -11,9 +11,9 @@ BUSYBOX_DOCKER_TAG = 1
 GRADLE_DOCKER_TAG = 8.12-jdk17
 PYTHON_DOCKER_TAG = 3.10
 # Other config
-CONFIG_DIR = ${PWD}/config
-CLIENTS_OUTPUT_DIR = ${PWD}/clients
-DOCS_CACHE_DIR = ${PWD}/docs/openapi
+CONFIG_DIR = $(CURDIR)/config
+CLIENTS_OUTPUT_DIR = $(CURDIR)/clients
+DOCS_CACHE_DIR = $(CURDIR)/docs/openapi
 TMP_DIR = $(shell mktemp -d "$${TMPDIR:-/tmp}/tmp.XXXXX")
 CURRENT_UID := $(shell id -u)
 CURRENT_GID := $(shell id -g)
@@ -202,6 +202,9 @@ build-openapi: init get-openapi-doc
 .EXPORT_ALL_VARIABLES:
 .PHONY: build-client-streamed
 build-client-streamed: build-openapi-streamed
+	CONFIG_DIR="${CONFIG_DIR}" CLIENTS_OUTPUT_DIR="${CLIENTS_OUTPUT_DIR}" \
+	CURRENT_UID="${CURRENT_UID}" CURRENT_GID="${CURRENT_GID}" \
+	OPENAPI_GENERATOR_CLI_DOCKER_TAG="${OPENAPI_GENERATOR_CLI_DOCKER_TAG}" \
 	SDK_LANGUAGE="${sdk_language}" TMP_DIR="${tmpdir}" LIBRARY_TEMPLATE="${library}"\
 		./scripts/build_client.sh
 

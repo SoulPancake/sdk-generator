@@ -24,6 +24,442 @@
     "/src/models/__init__.py.mustache": {
       "destinationFilename": "openfga_sdk/models/__init__.py",
       "templateType": "SupportingFiles"
+    },
+    "src/__init__.py.mustache": {
+      "destinationFilename": "openfga_sdk/__init__.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/api/__init__.py.mustache": {
+      "destinationFilename": "openfga_sdk/api/__init__.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/api.py.mustache": {
+      "destinationFilename": "openfga_sdk/api/open_fga_api.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/api_client.py.mustache": {
+      "destinationFilename": "openfga_sdk/api_client.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/configuration.py.mustache": {
+      "destinationFilename": "openfga_sdk/configuration.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/credentials.py.mustache": {
+      "destinationFilename": "openfga_sdk/credentials.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/exceptions.py.mustache": {
+      "destinationFilename": "openfga_sdk/exceptions.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/help.py.mustache": {
+      "destinationFilename": "openfga_sdk/help.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/oauth2.py.mustache": {
+      "destinationFilename": "openfga_sdk/oauth2.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/py.typed": {
+      "destinationFilename": "openfga_sdk/py.typed",
+      "templateType": "SupportingFiles"
+    },
+    "src/rest.py.mustache": {
+      "destinationFilename": "openfga_sdk/rest.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/validation.py.mustache": {
+      "destinationFilename": "openfga_sdk/validation.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/__init__.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/__init__.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/client.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/client.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/configuration.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/configuration.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/execute_api_request_builder.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/execute_api_request_builder.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/__init__.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/__init__.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/assertion.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/assertion.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/batch_check_item.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/batch_check_item.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/batch_check_request.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/batch_check_request.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/batch_check_response.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/batch_check_response.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/batch_check_single_response.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/batch_check_single_response.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/check_request.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/check_request.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/client_batch_check_response.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/client_batch_check_response.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/expand_request.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/expand_request.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/list_objects_request.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/list_objects_request.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/list_relations_request.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/list_relations_request.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/list_users_request.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/list_users_request.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/raw_response.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/raw_response.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/read_changes_request.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/read_changes_request.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/tuple.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/tuple.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/write_conflict_opts.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/write_conflict_opts.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/write_options.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/write_options.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/write_request.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/write_request.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/write_response.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/write_response.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/write_single_response.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/write_single_response.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/client/models/write_transaction_opts.py.mustache": {
+      "destinationFilename": "openfga_sdk/client/models/write_transaction_opts.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/sync/__init__.py.mustache": {
+      "destinationFilename": "openfga_sdk/sync/__init__.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/sync/api.py.mustache": {
+      "destinationFilename": "openfga_sdk/sync/api.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/sync/api_client.py.mustache": {
+      "destinationFilename": "openfga_sdk/sync/api_client.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/sync/client/__init__.py.mustache": {
+      "destinationFilename": "openfga_sdk/sync/client/__init__.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/sync/client/client.py.mustache": {
+      "destinationFilename": "openfga_sdk/sync/client/client.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/sync/client/execute_api_request_builder.py.mustache": {
+      "destinationFilename": "openfga_sdk/sync/client/execute_api_request_builder.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/sync/oauth2.py.mustache": {
+      "destinationFilename": "openfga_sdk/sync/oauth2.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/sync/rest.py.mustache": {
+      "destinationFilename": "openfga_sdk/sync/rest.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/telemetry/__init__.py.mustache": {
+      "destinationFilename": "openfga_sdk/telemetry/__init__.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/telemetry/attributes.py.mustache": {
+      "destinationFilename": "openfga_sdk/telemetry/attributes.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/telemetry/configuration.py.mustache": {
+      "destinationFilename": "openfga_sdk/telemetry/configuration.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/telemetry/counters.py.mustache": {
+      "destinationFilename": "openfga_sdk/telemetry/counters.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/telemetry/histograms.py.mustache": {
+      "destinationFilename": "openfga_sdk/telemetry/histograms.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/telemetry/metrics.py.mustache": {
+      "destinationFilename": "openfga_sdk/telemetry/metrics.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/telemetry/telemetry.py.mustache": {
+      "destinationFilename": "openfga_sdk/telemetry/telemetry.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/__init__.py": {
+      "destinationFilename": "test/__init__.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/api/__init__.py": {
+      "destinationFilename": "test/api/__init__.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/client/__init__.py": {
+      "destinationFilename": "test/client/__init__.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/sync/__init__.py": {
+      "destinationFilename": "test/sync/__init__.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/sync/client/__init__.py": {
+      "destinationFilename": "test/sync/client/__init__.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/api/open_fga_api_test.py.mustache": {
+      "destinationFilename": "test/api/open_fga_api_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/client/client_test.py.mustache": {
+      "destinationFilename": "test/client/client_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/configuration_test.py.mustache": {
+      "destinationFilename": "test/configuration_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/constants_consistency_test.py.mustache": {
+      "destinationFilename": "test/constants_consistency_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/credentials_test.py.mustache": {
+      "destinationFilename": "test/credentials_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/error_handling_test.py.mustache": {
+      "destinationFilename": "test/error_handling_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/error_integration_test.py.mustache": {
+      "destinationFilename": "test/error_integration_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/oauth2_test.py.mustache": {
+      "destinationFilename": "test/oauth2_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/rest_test.py.mustache": {
+      "destinationFilename": "test/rest_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/validation_test.py.mustache": {
+      "destinationFilename": "test/validation_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/sync/client/client_test.py.mustache": {
+      "destinationFilename": "test/sync/client/client_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/sync/oauth2_test.py.mustache": {
+      "destinationFilename": "test/sync/oauth2_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/sync/open_fga_api_test.py.mustache": {
+      "destinationFilename": "test/sync/open_fga_api_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/sync/rest_test.py.mustache": {
+      "destinationFilename": "test/sync/rest_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/telemetry/attributes_test.py.mustache": {
+      "destinationFilename": "test/telemetry/attributes_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/telemetry/configuration_test.py.mustache": {
+      "destinationFilename": "test/telemetry/configuration_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/telemetry/counters_test.py.mustache": {
+      "destinationFilename": "test/telemetry/counters_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/telemetry/histograms_test.py.mustache": {
+      "destinationFilename": "test/telemetry/histograms_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/telemetry/metrics_test.py.mustache": {
+      "destinationFilename": "test/telemetry/metrics_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "test/telemetry/telemetry_test.py.mustache": {
+      "destinationFilename": "test/telemetry/telemetry_test.py",
+      "templateType": "SupportingFiles"
+    },
+    "example/Makefile": {
+      "destinationFilename": "example/Makefile",
+      "templateType": "SupportingFiles"
+    },
+    "example/README.md": {
+      "destinationFilename": "example/README.md",
+      "templateType": "SupportingFiles"
+    },
+    "example/example1/example1.py.mustache": {
+      "destinationFilename": "example/example1/example1.py",
+      "templateType": "SupportingFiles"
+    },
+    "example/example1/requirements.txt.mustache": {
+      "destinationFilename": "example/example1/requirements.txt",
+      "templateType": "SupportingFiles"
+    },
+    "example/example1/setup.cfg": {
+      "destinationFilename": "example/example1/setup.cfg",
+      "templateType": "SupportingFiles"
+    },
+    "example/example1/setup.py.mustache": {
+      "destinationFilename": "example/example1/setup.py",
+      "templateType": "SupportingFiles"
+    },
+    "example/execute-api-request/execute_api_request_example.py.mustache": {
+      "destinationFilename": "example/execute-api-request/execute_api_request_example.py",
+      "templateType": "SupportingFiles"
+    },
+    "example/opentelemetry/.env.example": {
+      "destinationFilename": "example/opentelemetry/.env.example",
+      "templateType": "SupportingFiles"
+    },
+    "example/opentelemetry/.gitignore": {
+      "destinationFilename": "example/opentelemetry/.gitignore",
+      "templateType": "SupportingFiles"
+    },
+    "example/opentelemetry/README.md": {
+      "destinationFilename": "example/opentelemetry/README.md",
+      "templateType": "SupportingFiles"
+    },
+    "example/opentelemetry/main.py.mustache": {
+      "destinationFilename": "example/opentelemetry/main.py",
+      "templateType": "SupportingFiles"
+    },
+    "example/opentelemetry/requirements.txt": {
+      "destinationFilename": "example/opentelemetry/requirements.txt",
+      "templateType": "SupportingFiles"
+    },
+    "example/opentelemetry/setup.cfg": {
+      "destinationFilename": "example/opentelemetry/setup.cfg",
+      "templateType": "SupportingFiles"
+    },
+    "example/opentelemetry/setup.py.mustache": {
+      "destinationFilename": "example/opentelemetry/setup.py",
+      "templateType": "SupportingFiles"
+    },
+    "example/streamed-list-objects/README.md": {
+      "destinationFilename": "example/streamed-list-objects/README.md",
+      "templateType": "SupportingFiles"
+    },
+    "example/streamed-list-objects/example.py.mustache": {
+      "destinationFilename": "example/streamed-list-objects/example.py",
+      "templateType": "SupportingFiles"
+    },
+    "example/streamed-list-objects/model.json": {
+      "destinationFilename": "example/streamed-list-objects/model.json",
+      "templateType": "SupportingFiles"
+    },
+    ".github/ISSUE_TEMPLATE/bug_report.md.mustache": {
+      "destinationFilename": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "templateType": "SupportingFiles"
+    },
+    ".github/SECURITY-INSIGHTS.yml": {
+      "destinationFilename": ".github/SECURITY-INSIGHTS.yml",
+      "templateType": "SupportingFiles"
+    },
+    ".github/dependabot.yaml": {
+      "destinationFilename": ".github/dependabot.yaml",
+      "templateType": "SupportingFiles"
+    },
+    ".github/workflows/main.yaml": {
+      "destinationFilename": ".github/workflows/main.yaml",
+      "templateType": "SupportingFiles"
+    },
+    ".github/workflows/release-please.yml": {
+      "destinationFilename": ".github/workflows/release-please.yml",
+      "templateType": "SupportingFiles"
+    },
+    ".github/workflows/codeql.yml": {
+      "destinationFilename": ".github/workflows/codeql.yml",
+      "templateType": "SupportingFiles"
+    },
+    ".github/workflows/dependency-review.yml": {
+      "destinationFilename": ".github/workflows/dependency-review.yml",
+      "templateType": "SupportingFiles"
+    },
+    ".github/workflows/pr-title-conventional-commit.yml": {
+      "destinationFilename": ".github/workflows/pr-title-conventional-commit.yml",
+      "templateType": "SupportingFiles"
+    },
+    ".github/workflows/scorecard.yml": {
+      "destinationFilename": ".github/workflows/scorecard.yml",
+      "templateType": "SupportingFiles"
+    },
+    "Makefile": {
+      "destinationFilename": "Makefile",
+      "templateType": "SupportingFiles"
+    },
+    "release-please-config.json": {
+      "destinationFilename": "release-please-config.json",
+      "templateType": "SupportingFiles"
+    },
+    ".release-please-manifest.json.mustache": {
+      "destinationFilename": ".release-please-manifest.json",
+      "templateType": "SupportingFiles"
+    },
+    "RELEASE.md": {
+      "destinationFilename": "RELEASE.md",
+      "templateType": "SupportingFiles"
+    },
+    ".snyk": {
+      "destinationFilename": ".snyk",
+      "templateType": "SupportingFiles"
+    },
+    "docs/opentelemetry.md.mustache": {
+      "destinationFilename": "docs/opentelemetry.md",
+      "templateType": "SupportingFiles"
     }
   }
 }

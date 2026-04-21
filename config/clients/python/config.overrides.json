@@ -33,10 +33,6 @@
       "destinationFilename": "openfga_sdk/api/__init__.py",
       "templateType": "SupportingFiles"
     },
-    "src/api.py.mustache": {
-      "destinationFilename": "openfga_sdk/api/open_fga_api.py",
-      "templateType": "SupportingFiles"
-    },
     "src/api_client.py.mustache": {
       "destinationFilename": "openfga_sdk/api_client.py",
       "templateType": "SupportingFiles"
@@ -459,6 +455,14 @@
     },
     "docs/opentelemetry.md.mustache": {
       "destinationFilename": "docs/opentelemetry.md",
+      "templateType": "SupportingFiles"
+    },
+    "src/api/open_fga_api.py.mustache": {
+      "destinationFilename": "openfga_sdk/api/open_fga_api.py",
+      "templateType": "SupportingFiles"
+    },
+    "src/sync/open_fga_api.py.mustache": {
+      "destinationFilename": "openfga_sdk/sync/open_fga_api.py",
       "templateType": "SupportingFiles"
     }
   }

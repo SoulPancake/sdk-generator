@@ -25,6 +25,7 @@ openfga_sdk/py.typed
 openfga_sdk/client/*
 openfga_sdk/sync/*
 openfga_sdk/telemetry/*
+docs/OpenFgaApi.md
 example/*
 Makefile
 release-please-config.json

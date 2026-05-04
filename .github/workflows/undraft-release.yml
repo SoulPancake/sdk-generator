@@ -1,0 +1,16 @@
+name: Undraft Release
+
+on:
+  workflow_call:
+
+permissions:
+  contents: write
+
+jobs:
+  undraft-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release edit ${{ github.ref_name }} --repo ${{ github.repository }} --draft=false

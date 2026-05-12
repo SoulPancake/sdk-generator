@@ -266,3 +266,12 @@ shellcheck:
 .PHONY: setup-new-sdk
 setup-new-sdk:
 	./scripts/setup_new_sdk.sh
+
+.PHONY: build-client-ocaml
+build-client-ocaml:
+	make build-client sdk_language=ocaml tmpdir=${TMP_DIR}
+	# ... any other custom build steps ...
+
+.PHONY: test-client-ocaml
+test-client-ocaml: build-client-ocaml
+	# ... any custom test code ...

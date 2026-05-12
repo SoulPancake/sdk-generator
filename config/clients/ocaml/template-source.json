@@ -1,0 +1,8 @@
+{
+  "generator": "ocaml",
+  "repo": "https://github.com/OpenAPITools/openapi-generator",
+  "branch": "master",
+  "commit": "7a14a434f9cf0f2267b33d5a7b57abac3759b247",
+  "url": "https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator/src/main/resources/ocaml",
+  "docs": "https://github.com/OpenAPITools/openapi-generator/blob/master/docs/generators/ocaml.md"
+}
